@@ -43,7 +43,8 @@ __PACKAGE__->table("admin_table");
 
 =head2 date_admin
 
-  data_type: 'timestamp with time zone'
+  data_type: 'datetime'
+  set_on_create: 1
   is_nullable: 1
 
 =head2 include_sources_admin
@@ -100,7 +101,9 @@ __PACKAGE__->table("admin_table");
 
 =head2 update_admin
 
-  data_type: 'timestamp with time zone'
+  data_type: 'datetime'
+  set_on_create: 1
+  set_on_update: 1
   is_nullable: 1
 
 =head2 user_admin
@@ -121,7 +124,7 @@ __PACKAGE__->add_columns(
   "comment_admin",
   { data_type => "varchar", is_nullable => 1, size => 150 },
   "date_admin",
-  { data_type => "timestamp with time zone", is_nullable => 1 },
+  { data_type => "datetime", set_on_create => 1, is_nullable => 1 },
   "include_sources_admin",
   { data_type => "varchar", is_nullable => 1, size => 50 },
   "included_admin",
@@ -141,7 +144,7 @@ __PACKAGE__->add_columns(
   "subscribed_admin",
   { data_type => "integer", is_nullable => 1 },
   "update_admin",
-  { data_type => "timestamp with time zone", is_nullable => 1 },
+  { data_type => "datetime", set_on_create => 1, set_on_update => 1, is_nullable => 1 },
   "user_admin",
   { data_type => "varchar", is_nullable => 0, size => 100 },
   "visibility_admin",

@@ -66,7 +66,8 @@ __PACKAGE__->table("subscriber_table");
 
 =head2 date_subscriber
 
-  data_type: 'timestamp with time zone'
+  data_type: 'datetime'
+  set_on_create: 1
   is_nullable: 1
 
 =head2 include_sources_subscriber
@@ -131,7 +132,9 @@ __PACKAGE__->table("subscriber_table");
 
 =head2 update_subscriber
 
-  data_type: 'timestamp with time zone'
+  data_type: 'datetime'
+  set_on_create: 1
+  set_on_update: 1
   is_nullable: 1
 
 =head2 user_subscriber
@@ -160,7 +163,7 @@ __PACKAGE__->add_columns(
   "custom_attribute_subscriber",
   { data_type => "varchar", is_nullable => 1, size => 500 },
   "date_subscriber",
-  { data_type => "timestamp with time zone", is_nullable => 1 },
+  { data_type => "datetime", set_on_create => 1, is_nullable => 1 },
   "include_sources_subscriber",
   { data_type => "varchar", is_nullable => 1, size => 50 },
   "included_subscriber",
@@ -184,7 +187,7 @@ __PACKAGE__->add_columns(
   "topics_subscriber",
   { data_type => "varchar", is_nullable => 1, size => 200 },
   "update_subscriber",
-  { data_type => "timestamp with time zone", is_nullable => 1 },
+  { data_type => "datetime", set_on_create => 1, set_on_update => 1, is_nullable => 1 },
   "user_subscriber",
   { data_type => "varchar", is_nullable => 0, size => 100 },
   "visibility_subscriber",
