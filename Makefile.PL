@@ -43,4 +43,11 @@ WriteMakefile(
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Sympa-Schema-*' },
+    META_MERGE        => {
+        resources => {
+            repository  => 'https://github.com/sympa-community/sympa-schema',
+            bugtracker => 'https://github.com/sympa-community/sympa-schema/issues',
+            IRC => 'irc://irc.freenode.net/#sympa',
+        },
+    },
 );
