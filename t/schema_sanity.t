@@ -55,14 +55,14 @@ test 'schema_sanity' => sub {
 
             if ( $columns_info->{$column}->{is_auto_increment} ) {
                 ok(
-                    defined $data_type && $data_type eq 'integer',
+                    defined $data_type && ($data_type eq 'integer' || $data_type eq 'bigint'),
                     "$source_name $column has integer auto_increment col"
                 );
             }
 
             # data_type specific checks
 
-            if ( $data_type =~ /^(integer|text)$/ ) {
+            if ( $data_type =~ /^(integer|bigint|smallint|text)$/ ) {
 
                 # nothing to see
             }
