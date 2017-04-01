@@ -16,6 +16,7 @@ WriteMakefile(
         'DBIx::Class' => 0,
     },
     BUILD_REQUIRES => {
+        'Data::Dumper::Concise' => 0,
         'Test::More' => 0,
         'DBD::SQLite' => 1.38_01,
     },
@@ -35,6 +36,7 @@ WriteMakefile(
             'DBIx::Class::InflateColumn::DateTime::Duration' => 0,
             'DBIx::Class::Schema::Config'          => 0.001011,
             'DBIx::Class::TimeStamp'               => 0,
+            'Test::Roo'             => 1.003,
             'Try::Tiny'             => 0,
             %$dbic_deps,
         };
