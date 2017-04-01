@@ -17,6 +17,7 @@ WriteMakefile(
     },
     BUILD_REQUIRES => {
         'Test::More' => 0,
+        'DBD::SQLite' => 1.38_01,
     },
     PREREQ_PM => do {
         eval { require DBIx::Class::Optional::Dependencies };
