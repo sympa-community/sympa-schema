@@ -1,6 +1,8 @@
 use utf8;
 package Sympa::Schema;
 
+our version = '1';
+
 # Created by DBIx::Class::Schema::Loader
 # DO NOT MODIFY THE FIRST PART OF THIS FILE
 
