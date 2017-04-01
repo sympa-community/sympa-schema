@@ -1,8 +1,6 @@
 use utf8;
 package Sympa::Schema::Result::ConfTable;
 
-# Created by DBIx::Class::Schema::Loader
-# DO NOT MODIFY THE FIRST PART OF THIS FILE
 
 =head1 NAME
 
@@ -79,9 +77,6 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key("label_conf", "robot_conf");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07046 @ 2017-04-01 13:45:49
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:AjlL7G/b/dTjUvzcgHV+4g
 
 
-# You can replace this text with custom code or comments, and it will be preserved on regeneration
 1;
