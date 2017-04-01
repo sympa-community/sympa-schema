@@ -15,6 +15,10 @@ lib/Sympa/Schema/Result/StatCounterTable.pm
 lib/Sympa/Schema/Result/StatTable.pm
 lib/Sympa/Schema/Result/SubscriberTable.pm
 lib/Sympa/Schema/Result/UserTable.pm
+lib/Sympa/Test/Role/Database.pm
+lib/Sympa/Test/Role/MySQL.pm
+lib/Sympa/Test/Role/PostgreSQL.pm
+lib/Sympa/Test/Role/SQLite.pm
 LICENSE
 Makefile
 Makefile.PL
@@ -28,4 +32,5 @@ t/00-load.t
 t/manifest.t
 t/pod-coverage.t
 t/pod.t
+t/schema_sanity.t
 xt/boilerplate.t
