@@ -1,6 +1,14 @@
 use utf8;
 package Sympa::Schema;
 
+=encoding utf8
+
+=head1 NAME
+
+Sympa::Schema - Database Schema for Sympa Mailinglist Manager
+
+=cut
+
 our $VERSION = '1';
 
 # Created by DBIx::Class::Schema::Loader
