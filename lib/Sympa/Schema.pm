@@ -27,4 +27,15 @@ __PACKAGE__->load_namespaces;
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
+
+=head1 AUTHORS
+
+Sympa Community C<sympa-developpers@listes.renater.fr>
+
+Stefan Hornburg (Racke), C<racke@linuxia.de>
+
+Peter Mottram, C<peter@sysnix.com> (Test code from L<Interchange6::Schema>).
+
+=cut
+
 1;
