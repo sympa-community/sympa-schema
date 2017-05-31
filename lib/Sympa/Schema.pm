@@ -17,6 +17,9 @@ use warnings;
 
 use base 'DBIx::Class::Schema';
 
+__PACKAGE__->load_components( 'Helper::Schema::DateTime',
+    'Helper::Schema::QuoteNames' );
+
 __PACKAGE__->load_namespaces;
 
 
