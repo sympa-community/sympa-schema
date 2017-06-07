@@ -15,7 +15,7 @@ our $VERSION = '1';
 use strict;
 use warnings;
 
-use base 'DBIx::Class::Schema';
+use base 'DBIx::Class::Schema::Config';
 
 __PACKAGE__->load_components( 'Helper::Schema::DateTime',
     'Helper::Schema::QuoteNames' );
